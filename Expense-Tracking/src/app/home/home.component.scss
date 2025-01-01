@@ -1,0 +1,94 @@
+.crt {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+}
+.addExpenses-btn {
+    background-color: #4CAF50; 
+    background: linear-gradient(45deg, #09203F,  #537895);
+    color: white;
+    border: none;
+    padding: 10px 30px 10px 30px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px; 
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1); 
+}
+
+.addExpenses-btn:hover {
+    background: linear-gradient(45deg, #6a11cb, #2575fc); 
+    transform: scale(1.05);
+}
+.title {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold; 
+  color:#0c2b53; 
+  text-transform: uppercase; 
+}
+div {
+  width:100%;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+.table-h2{
+  display: flex;
+  justify-content: space-between;
+}
+
+.table-container {
+  width: 100%;
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+.table-container::-webkit-scrollbar {
+  display: none;
+}
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-bottom: 20px;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+  border: 1px solid #ddd; 
+}
+
+th {
+  background-color: #537895; 
+  color: white;
+}
+
+tr:hover {
+  background-color: #f1f1f1; 
+}
+
+button {
+  padding: 5px 10px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:first-child {
+  background-color: #4CAF50; 
+  color: white;
+}
+
+button:first-child:hover {
+  background-color: #45a049; 
+}
+
+button:last-child {
+  background-color: #f44336; 
+  color: white;
+}
+
+button:last-child:hover {
+  background-color: #e53935; 
+}

@@ -1,0 +1,9 @@
+<nav class="navbar">
+    <h2>Expense~Tracker</h2>
+    <div >
+        <div class="user-info">
+            <span *ngIf="currentUserName">Welcome, {{ currentUserName }}</span>
+        </div>
+        <button class="logOut-btn" (click)="logout()">Log Out</button>
+    </div>
+</nav>
