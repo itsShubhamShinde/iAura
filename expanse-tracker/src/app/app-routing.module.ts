@@ -11,7 +11,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    canActivate: [AuthGuard] 
+    // canActivate: [AuthGuard] 
   },
   {
     path: 'login',
@@ -25,12 +25,12 @@ const routes: Routes = [
   {
     path: 'details/:id',
     component: DetailsComponent,
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   },
   {
     path: 'view',
     component: ViewComponent,
-    canActivate: [AuthGuard]
+    // canActivate: [AuthGuard]
   }
 ];
 

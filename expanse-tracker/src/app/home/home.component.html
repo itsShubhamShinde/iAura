@@ -12,6 +12,7 @@
     <table>
       <thead>
         <tr>
+          <th>Sr.No</th>
           <th>Category</th>
           <th>Amount</th>
           <th>Created At</th>
@@ -22,14 +23,19 @@
       </thead>
       <tbody>
         <tr *ngFor="let expense of arr; let i = index">
+          <td>{{i+1}}</td>
           <td>{{ expense.category }}</td>
           <td>{{ expense.amount }}</td>
           <td>{{ expense.createdAt }}</td>
           <td>{{ expense.updatedAt }}</td>
           <td>{{ expense.comments }}</td>
           <td>
-            <button [routerLink]="['/details', i]">Edit</button>
-            <button (click)="deleteExpense(i)">Delete</button>
+            <button mat-button class="small-button edit-button" [routerLink]="['/details', i]">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-button class="small-button delete-button" (click)="deleteExpense(i)">
+              <mat-icon>delete</mat-icon>
+            </button>
           </td>
         </tr>
       </tbody>

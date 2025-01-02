@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ApiService } from '../../services/api.service';
 
 @Component({
   selector: 'app-nav',
@@ -10,7 +11,7 @@ export class NavComponent {
  
   currentUserName: any;
 
-  constructor(private router: Router) {}
+  constructor(private router: Router,private apiService:ApiService) {}
 
   ngOnInit() {
     const user = localStorage.getItem('currentUser');
@@ -21,6 +22,7 @@ export class NavComponent {
   }
 
   logout() {
+    this.apiService.setToken(null);
     localStorage.removeItem('currentUser');
     this.router.navigate(['/login']); 
   }
